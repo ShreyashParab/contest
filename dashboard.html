@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Dashboard
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Login</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container">
+        <h1 id="heading">Welcome</h1>
+        <form class="row g-3 needs-validation registration-form" novalidate>
+            <div class="col-md-12">
+                <label for="oldPassword" class="form-label">Old Password</label>
+                <div class="input-group has-validation">
+                  <input type="password" class="form-control" id="oldPassword" aria-describedby="inputGroupPrepend" autocomplete="off">
+                  <div class="valid-feedback" id="oldPassword-valid">
+                    <i class="fa-solid fa-circle-check" style="color: green;"></i> Looks good!
+                  </div>
+                  <div class="invalid-feedback" id="oldPassword-invalid">
+                    <i class="fa-solid fa-circle-exclamation" style="color: red;" title="must be equal or greater than 8"></i> Please enter a valid password
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="newPassword" class="form-label">New Password</label>
+                <div class="input-group has-validation">
+                  <input type="password" class="form-control" id="newPassword" aria-describedby="inputGroupPrepend" autocomplete="off">
+                  <div class="valid-feedback" id="newPassword-valid">
+                    <i class="fa-solid fa-circle-check" style="color: green;"></i> Looks good!
+                  </div>
+                  <div class="invalid-feedback" id="newPassword-invalid">
+                    <i class="fa-solid fa-circle-exclamation" style="color: red;" title="must be equal or greater than 8"></i> Please enter a valid password
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="cnfPassword" class="form-label">Confirm Password</label>
+                <div class="input-group has-validation">
+                  <input type="password" class="form-control" id="cnfPassword" aria-describedby="inputGroupPrepend" autocomplete="off">
+                  <div class="valid-feedback" id="cnfPassword-valid">
+                    <i class="fa-solid fa-circle-check" style="color: green;"></i> Looks good!
+                  </div>
+                  <div class="invalid-feedback" id="cnfPassword-invalid">
+                    <i class="fa-solid fa-circle-exclamation" style="color: red;" title="must be equal or greater than 8"></i> Please enter a valid password
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+              <button class="btn btn-dark" type="button" onclick="dashboard()">Submit</button>
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-dark" type="button" onclick="logout()">Logout</button>
+              </div>
+        </form>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
